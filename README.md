@@ -1,5 +1,6 @@
 # Geekster Quiz App
-
+**Live demo**
+click here : https://mct-5-assignment.vercel.app/
 ## Introduction
 The Geekster Quiz App is a simple React-based quiz application. It allows users to answer multiple-choice questions and receive their scores at the end of the quiz. The application features randomized questions, score tracking, and a reset functionality.
 

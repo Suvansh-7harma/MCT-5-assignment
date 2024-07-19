@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Geekster Quiz App
+**Live demo**
+click here : https://mct-5-assignment.vercel.app/
+## Introduction
+The Geekster Quiz App is a simple React-based quiz application. It allows users to answer multiple-choice questions and receive their scores at the end of the quiz. The application features randomized questions, score tracking, and a reset functionality.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+- Randomly scrambles the order of questions on reset
+- Automatic transition to the next question after a delay
+- Score tracking for correct answers
+- Display of the final score
 
-## Available Scripts
+## Installation
+To install and run the Geekster Quiz App locally, follow these steps:
 
-In the project directory, you can run:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Suvansh-7harma/MCT-5-assignment.git
+   Install dependencies:
+npm install
+Start the development server:
 
-### `npm start`
+npm start
+Usage
+Once the development server is running, you can access the application in your web browser at http://localhost:3000.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application will present a series of multiple-choice questions.
+Click on an option to select your answer.
+After a brief delay, the application will automatically transition to the next question.
+At the end of the quiz, your score will be displayed.
+**Project Structure**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── Data/
+│   │   └── QuizData.js
+│   ├── components/
+│   │   ├── Quiz.js
+│   │   └── QuizResult.js
+│   ├── App.js
+│   ├── index.css
+│   └── index.js
+├── package.json
+└── README.md
 
-### `npm test`
+public/: Contains the HTML template and static assets.
+src/: Contains the source code for the application.
+Data/: Contains the quiz data.
+components/: Contains the React components.
+index.css: Contains the global styles.
+index.js: The entry point of the application.
+Contributing
+Contributions are welcome! If you have any suggestions or improvements, please submit a pull request or open an issue.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

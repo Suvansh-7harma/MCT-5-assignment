@@ -1,124 +1,128 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   display: flex;
   align-items: center;
-  justify-content: center;    
-  /* background-image: linear-gradient(purple,rgb(238, 48, 238)); */
+  justify-content: center;
   background-color: #39a35c;
   min-height: 100vh;
   width: 100%;
+  font-family: Arial, sans-serif;
 }
 
 .container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-height: 400px;
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   background-color: white;
   border-radius: 15px;
-  /* box-shadow: 2px 2px 10px 1px rgb(102, 3, 102); */
-  box-shadow: 2px 2px 10px 1px #333;  
+  box-shadow: 2px 2px 10px 1px #333;
   overflow: hidden;
-  padding: 10px;
+  padding: 20px;
   position: relative;
 }
-.heading-txt{
-  color:white;
-  /* color:#276272; */
-  font-size: 30px;
+
+.heading-txt {
+  color: white;
+  font-size: 2rem;
   font-weight: bold;
   margin: 10px;
-  text-align: center;  
+  text-align: center;
   text-transform: uppercase;
 }
-.question{
-  margin:8px;
+
+.question {
+  margin: 8px;
   box-shadow: 0px 0px 10px 1px #78d184;
   border-radius: 5px;
-  padding:5px;
-  font-size: large;
+  padding: 10px;
+  font-size: 1.2rem;
   font-weight: 600;
   font-family: 'Times New Roman', Times, serif;
-  min-width: 100%;
-  min-height: 90px;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#question-number{
+
+#question-number {
   margin-right: 5px;
-  font-size: larger;
+  font-size: 1.5rem;
+  color: aquamarine;
 }
-.option-container{
+
+.option-container {
   display: flex;
   flex-direction: column;
-  margin:6px 4px;    
+  margin: 6px 4px;
   width: 100%;
   padding: 10px;
 }
-/* .option-container input{
-  visibility: hidden;    
-} */
-.option-btn{
+
+.option-btn {
   box-shadow: 0px 0px 4px 1px #78d184;
-  padding: 5px;
+  padding: 10px;
   border-radius: 3px;
-  border:none;
+  border: none;
   outline: none;
   transition: 0.3s;
   margin: 5px;
-  min-height: 30px;
   background-color: #78d18449;
 }
 
-.checked{
+.checked {
   background-color: #78d184;
-  color:white;
+  color: white;
   box-shadow: 2px 2px 2px 1px #78d184;
 }
-.option-btn:hover{
-  background-color:#78d184;
-  color:white;
-}
-#next-button{
-  padding:10px;
-  border:none;
+
+.option-btn:hover {
   background-color: #78d184;
-  color:white;
+  color: white;
+}
+
+#next-button {
+  padding: 10px;
+  border: none;
+  background-color: #78d184;
+  color: white;
   border-radius: 5px;
   box-shadow: 2px 2px 2px 1px #78d184;
-  font-size: larger;
+  font-size: 1.2rem;
   font-weight: bold;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   transition: 0.2s;
-  width:100px;
+  width: 100px;
   position: absolute;
   bottom: 15px;
   cursor: pointer;
 }
-#next-button:active{
-  box-shadow:none;    
+
+#next-button:active {
+  box-shadow: none;
 }
-.show-score{
+
+.show-score {
   position: absolute;
   background-color: #78d184;
   padding: 2rem;
   border: 2px;
   margin-top: 20%;
-  top:2%;
-  font-size: 40px;
-  text-align: center;  
- 
+  top: 2%;
+  font-size: 2.5rem;
+  text-align: center;
   border-radius: 5px;
 }
-/* Add this to your CSS file */
+
 .option-btn.correct {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
   color: white;
 }
 
@@ -138,4 +142,52 @@ body{
 
 .wrong-answers li {
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .heading-txt {
+    font-size: 1.5rem;
+  }
+
+  .question {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .option-btn {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  #next-button {
+    font-size: 1rem;
+  }
+
+  .show-score {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading-txt {
+    font-size: 1.2rem;
+  }
+
+  .question {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+
+  .option-btn {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+
+  #next-button {
+    font-size: 0.9rem;
+  }
+
+  .show-score {
+    font-size: 1.5rem;
+  }
 }
